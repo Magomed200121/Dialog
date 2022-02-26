@@ -21,6 +21,7 @@ a {
   text-decoration: none;
 }
 
+/* Header */
 .header {
   box-shadow: 0px 5px 20px rgba(28, 28, 28, 0.1);
   padding: 16px 0;
@@ -86,9 +87,112 @@ a {
   border-radius: 30px;
   background-color: #E6514A;
   text-align: center;
-  font-family: Montserrat;
+  font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   font-size: 16px;
   color: #fff;
+}
+
+/* Modifications */
+.section_name {
+  position: relative;
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  line-height: 17px;
+  color: #23283B;
+}
+
+.section_name::before {
+  content: '';
+  position: absolute;
+  width: 40px;
+  height: 1px;
+  bottom: 8px;
+  transform: translateX(-55px);
+  background-color: #E6514A;
+}
+
+.title_style {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 130%;
+  color: #23283B;
+}
+
+/* Main */
+.main__info {
+  padding-top: 120px;
+}
+
+.main__info-text {
+  font-family: Lato;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 150%;
+  color: #3035C4;
+}
+
+.main__info-title {
+  width: 570px;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  color: #23283B;
+  font-family: Montserrat;
+  font-weight: 800;
+  font-size: 56px;
+  line-height: 130%;
+}
+
+.main__info-title span {
+  color: #E6514A;
+}
+
+.main__info-btn {
+  margin-top: 50px;
+  padding: 16px 60px;
+}
+
+/* Welcome */
+.welcome {
+  padding: 55px 0 100px 0;
+  background-image: url("../img/dialog-bg-welcome.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 100%;
+}
+
+.welcome__title {
+  margin-top: 10px;
+}
+
+.welcome__video {
+  height: 440px;
+  position: relative;
+}
+
+.welcome__video img {
+  width: 100%;
+}
+
+.welcome__video-play {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.welcome__video-play ion-icon {
+  width: 80px;
+  height: 80px;
+  color: #fff;
+}
+
+/* Programs */
+.programs {
+  padding: 100px 0 100px 0;
 }
 /*# sourceMappingURL=style.css.map */
