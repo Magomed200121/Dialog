@@ -96,6 +96,7 @@ a {
 /* Modifications */
 .section_name {
   position: relative;
+  text-transform: uppercase;
   text-align: center;
   font-family: 'Lato', sans-serif;
   font-size: 14px;
@@ -120,6 +121,18 @@ a {
   font-size: 48px;
   line-height: 130%;
   color: #23283B;
+}
+
+.corporative_text {
+  font-size: 22px;
+  line-height: 27px;
+  font-weight: 900;
+  color: #3035C4;
+  font-family: "Montserrat", sans-serif;
+}
+
+.courses_text-info {
+  width: 336px;
 }
 
 /* Main */
@@ -183,9 +196,6 @@ a {
   top: 50%;
   left: 50%;
   transform: translateX(-50%);
-}
-
-.welcome__video-play ion-icon {
   width: 80px;
   height: 80px;
   color: #fff;
@@ -194,5 +204,256 @@ a {
 /* Programs */
 .programs {
   padding: 100px 0 100px 0;
+}
+
+.programs__tarif-top {
+  margin-top: 50px;
+  min-height: 183px;
+  text-align: center;
+  padding: 28px 20px;
+  border: 1px solid #DEDEFF;
+  border-radius: 4px;
+}
+
+.programs__tarif-info {
+  width: 237px;
+  color: #3035C4;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.programs__tarif-info span {
+  padding-left: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 49px;
+  color: #3035C4;
+}
+
+.programs__tarif-text {
+  padding-top: 16px;
+  color: #23283B;
+  font-family: Montserrat;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.programs__tarif-lists {
+  min-height: 190px;
+  margin-top: 30px;
+}
+
+.programs__tarif-item {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 12px;
+  color: #23283B;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  line-height: 150%;
+}
+
+.programs__tarif-item::before {
+  position: absolute;
+  content: '';
+  width: 25px;
+  height: 25px;
+  background-image: url("../img/dialog-tarif-elemnt.svg");
+  background-repeat: no-repeat;
+  left: 0;
+}
+
+.programs__tarif-btn {
+  display: block;
+  width: 230px;
+  margin: 0 auto;
+  padding: 16px 65px;
+}
+
+.programs__tarif-present {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding-left: 19px;
+  width: 205px;
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 16px;
+  color: #3035C4;
+}
+
+.programs__tarif-present::before {
+  position: absolute;
+  content: '';
+  background-image: url("../img/dialog-tarif-play.svg");
+  background-repeat: no-repeat;
+  width: 25px;
+  height: 25px;
+  left: 0;
+}
+
+.programs__license {
+  margin-top: 140px;
+  height: 441px;
+  border-radius: 20px;
+  background-color: #3035C4;
+}
+
+/* Wrapper */
+.wrapper {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+/* Partners */
+.partners__img {
+  margin-top: 50px;
+}
+
+/* Courses */
+.courses {
+  margin-top: 100px;
+  padding: 80px 0;
+  background-color: #F8F8FF;
+}
+
+.courses__tab {
+  margin-top: 50px;
+}
+
+.courses__slide {
+  cursor: grab;
+  padding: 50px 50px;
+  margin-top: 40px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 10px 40px rgba(0, 11, 68, 0.22);
+}
+
+.courses__slide-title {
+  font-family: "Montserrat", sans-serif;
+  color: #3035C4;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 130%;
+}
+
+.courses__slide-text {
+  margin-top: 25px;
+  margin-bottom: 50px;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  line-height: 180%;
+}
+
+.courses__elements {
+  display: flex;
+  justify-content: space-between;
+}
+
+.courses__element {
+  width: 212px;
+}
+
+.courses__element-title {
+  margin-bottom: 25px;
+  font-family: "Montserrat", sans-serif;
+  color: #23283B;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 130%;
+}
+
+.courses__element-list {
+  padding-left: 30px;
+  position: relative;
+  margin-bottom: 16px;
+}
+
+.courses__element-list::before {
+  position: absolute;
+  content: '';
+  background-image: url("../img/dialog-tarif-elemnt.svg");
+  background-repeat: no-repeat;
+  width: 25px;
+  height: 25px;
+  left: 0;
+}
+
+.courses__element-list span {
+  display: block;
+  padding-bottom: 5px;
+  font-family: "Lato", sans-serif;
+  color: #23283B;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 150%;
+}
+
+.courses__element-structure {
+  position: relative;
+  padding-bottom: 8px;
+  margin-bottom: 16px;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  line-height: 150%;
+  color: #23283B;
+  font-weight: 500;
+}
+
+.courses__element-structure::before {
+  position: absolute;
+  content: '';
+  width: 60px;
+  height: 4px;
+  background-color: #E6514A;
+  border-radius: 10px;
+  bottom: 0;
+}
+
+.courses__element-structure span {
+  font-family: "Lato", sans-serif;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 150%;
+  color: #E6514A;
+}
+
+/* Swiper Js */
+.swiper-button-prev {
+  width: 56px;
+  height: 56px;
+  box-shadow: 15px 10px 40px rgba(0, 11, 68, 0.22);
+  border-radius: 50%;
+}
+
+.swiper-button-prev::after {
+  content: '';
+  background-image: url("../img/dialog-chevron.svg");
+  background-repeat: no-repeat;
+  width: 8px;
+  height: 14px;
+}
+
+.swiper-button-next {
+  width: 56px;
+  height: 56px;
+  box-shadow: -15px 10px 40px rgba(0, 11, 68, 0.22);
+  border-radius: 50%;
+}
+
+.swiper-button-next::after {
+  content: '';
+  background-image: url("../img/dialog-chevron.svg");
+  background-repeat: no-repeat;
+  width: 8px;
+  height: 14px;
+  transform: rotate(180deg);
 }
 /*# sourceMappingURL=style.css.map */

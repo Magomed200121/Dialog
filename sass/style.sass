@@ -3,6 +3,8 @@ $accent-color: #E6514A
 $light-color: #DEDEFF
 $dark-color: #23283B
 $blue-color: #3035C4
+$montserrat: 'Montserrat', sans-serif
+$lato: 'Lato', sans-serif
 =title-style
     text-align: center
     font-family: 'Montserrat', sans-serif
@@ -19,6 +21,7 @@ $blue-color: #3035C4
     font-size: 16px
     color: #fff
 =section-name
+    text-transform: uppercase
     text-align: center
     font-family: 'Lato', sans-serif
     font-size: 14px
@@ -85,6 +88,15 @@ $blue-color: #3035C4
     +section-name
 .title_style
     +title-style
+.corporative_text
+    font-size: 22px
+    line-height: 27px
+    font-weight: 900
+    color: $blue-color
+    font-family: $montserrat
+
+.courses_text-info
+    width: 336px
 
 /* Main */
 .main
@@ -132,11 +144,206 @@ $blue-color: #3035C4
             left: 50%
             transform: translateX(-50%)
             ion-icon
-                width: 80px
-                height: 80px
-                color: #fff
-
+            width: 80px
+            height: 80px
+            color: #fff
 
 /* Programs */
 .programs
     padding: 100px 0 100px 0
+    &__tarif
+        &-top
+            margin-top: 50px
+            min-height: 183px
+            text-align: center
+            padding: 28px 20px
+            border: 1px solid $light-color
+            border-radius: 4px
+        &-info
+            width: 237px
+            color: $blue-color
+            font-family: $montserrat
+            font-weight: 900
+            font-size: 18px
+            line-height: 22px
+            span
+                padding-left: 10px
+                font-family: $montserrat
+                font-weight: 900
+                font-size: 40px
+                line-height: 49px
+                color: $blue-color
+        &-text
+            padding-top: 16px
+            color: $dark-color
+            font-family: Montserrat
+            font-weight: bold
+            font-size: 16px
+            line-height: 20px
+        &-lists
+            min-height: 190px
+            margin-top: 30px
+        &-item
+            position: relative
+            padding-left: 30px
+            margin-bottom: 12px
+            color: $dark-color
+            font-family: $lato
+            font-size: 14px
+            line-height: 150%
+            &::before
+                position: absolute
+                content: ''
+                width: 25px
+                height: 25px
+                background-image: url('../img/dialog-tarif-elemnt.svg')
+                background-repeat: no-repeat
+                left: 0
+        &-btn
+            display: block
+            width: 230px
+            margin: 0 auto
+            padding: 16px 65px
+        &-present
+            position: relative
+            display: block
+            margin: 0 auto
+            margin-top: 20px
+            padding-left: 19px
+            width: 205px
+            font-family: $lato
+            font-weight: 900
+            font-size: 14px
+            line-height: 16px
+            color: $blue-color
+            &::before
+                position: absolute
+                content: ''
+                background-image: url('../img/dialog-tarif-play.svg')
+                background-repeat: no-repeat
+                width: 25px
+                height: 25px
+                left: 0
+    &__license
+        margin-top: 140px
+        height: 441px
+        border-radius: 20px
+        background-color: $blue-color
+
+/* Wrapper */
+.wrapper
+    max-width: 1170px
+    margin: 0 auto
+
+/* Partners */
+.partners
+    &__img
+        margin-top: 50px
+
+/* Courses */
+.courses
+    margin-top: 100px
+    padding: 80px 0
+    background-color: #F8F8FF
+    &__tab
+        margin-top: 50px
+    &__slide
+        cursor: grab
+        padding: 50px 50px
+        margin-top: 40px
+        background-color: #fff
+        border-radius: 10px
+        box-shadow: 0px 10px 40px rgba(0, 11, 68, 0.22)
+        &-title
+            font-family: $montserrat
+            color: $blue-color
+            font-weight: 800
+            font-size: 24px
+            line-height: 130%
+        &-text
+            margin-top: 25px
+            margin-bottom: 50px
+            font-family: $lato
+            font-size: 14px
+            line-height: 180%
+    &__elements
+        display: flex
+        justify-content: space-between
+    &__element
+        width: 212px
+        &-title
+            margin-bottom: 25px
+            font-family: $montserrat
+            color: $dark-color
+            font-weight: 800
+            font-size: 20px
+            line-height: 130%
+        &-list
+            padding-left: 30px
+            position: relative
+            margin-bottom: 16px
+            &::before
+                position: absolute
+                content: ''
+                background-image: url('../img/dialog-tarif-elemnt.svg')
+                background-repeat: no-repeat
+                width: 25px
+                height: 25px
+                left: 0
+            span
+                display: block
+                padding-bottom: 5px
+                font-family: $lato
+                color: $dark-color
+                font-weight: 800
+                font-size: 14px
+                line-height: 150%
+        &-structure
+            position: relative
+            padding-bottom: 8px
+            margin-bottom: 16px
+            font-family: $lato
+            font-size: 14px
+            line-height: 150%
+            color: $dark-color
+            font-weight: 500
+            &::before
+                position: absolute
+                content: ''
+                width: 60px
+                height: 4px
+                background-color: $accent-color
+                border-radius: 10px
+                bottom: 0
+            span
+                font-family: $lato
+                font-weight: 800
+                font-size: 14px
+                line-height: 150%
+                color: $accent-color
+
+/* Swiper Js */
+.swiper-button-prev
+    width: 56px
+    height: 56px
+    box-shadow: 15px 10px 40px rgba(0, 11, 68, 0.22)
+    border-radius: 50%
+    &::after
+        content: ''
+        background-image: url('../img/dialog-chevron.svg')
+        background-repeat: no-repeat
+        width: 8px
+        height: 14px
+        
+.swiper-button-next
+    width: 56px
+    height: 56px
+    box-shadow: -15px 10px 40px rgba(0, 11, 68, 0.22)
+    border-radius: 50%
+    &::after
+        content: ''
+        background-image: url('../img/dialog-chevron.svg')
+        background-repeat: no-repeat
+        width: 8px
+        height: 14px
+        transform: rotate(180deg)
