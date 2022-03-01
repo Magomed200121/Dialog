@@ -456,4 +456,86 @@ a {
   height: 14px;
   transform: rotate(180deg);
 }
+
+/* Teachers */
+.teachers {
+  padding: 100px 0 60px 0;
+}
+
+.teachers__card {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.teachers__card-img {
+  width: 376px;
+  margin: 0 auto;
+  height: 210px;
+  background-color: #DEDEFF;
+  border-radius: 12px;
+}
+
+.teachers__card-title {
+  display: block;
+  padding-top: 45px;
+  color: #3035C4;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 130%;
+}
+
+.teachers__card-text {
+  padding-top: 35px;
+  color: #23283B;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  line-height: 150%;
+}
+
+/* Advantage */
+.advantage {
+  padding: 80px 0 80px 0;
+}
+
+.advantage__item {
+  text-align: center;
+  margin-top: 80px;
+}
+
+.advantage__item-img {
+  text-align: center;
+}
+
+.advantage__item-img img {
+  padding: 10px;
+  border-radius: 50%;
+  box-shadow: 0px 10px 24px rgba(73, 95, 211, 0.12);
+}
+
+.advantage__item-title {
+  display: block;
+  margin-top: 12px;
+  font-family: "Lato", sans-serif;
+  color: #23283B;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 150%;
+}
+
+.advantage__item-text {
+  margin-top: 10px;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.advantage__btn {
+  display: block;
+  margin: 0 auto;
+  margin-top: 80px;
+  width: 365px;
+  height: 52px;
+  line-height: 52px;
+}
 /*# sourceMappingURL=style.css.map */
