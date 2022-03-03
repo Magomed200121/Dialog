@@ -23,8 +23,16 @@ a {
 
 /* Header */
 .header {
+  width: 100%;
+  background-color: #fff;
+  position: fixed;
+  z-index: 2;
   box-shadow: 0px 5px 20px rgba(28, 28, 28, 0.1);
   padding: 16px 0;
+}
+
+.header__btn-wrapper {
+  text-align: right;
 }
 
 .header__top {
@@ -93,7 +101,22 @@ a {
   color: #fff;
 }
 
+.dialog-burger {
+  background-image: url("../img/dialog-burger.svg");
+  width: 25px;
+  height: 25px;
+  background-repeat: no-repeat;
+}
+
 /* Modifications */
+.header__menu.show_menu {
+  display: block;
+}
+
+.dialog-burger {
+  display: none;
+}
+
 .section_name {
   position: relative;
   text-transform: uppercase;
@@ -136,6 +159,10 @@ a {
 }
 
 /* Main */
+.main {
+  padding-top: 100px;
+}
+
 .main__info {
   padding-top: 120px;
 }
@@ -196,6 +223,9 @@ a {
   top: 50%;
   left: 50%;
   transform: translateX(-50%);
+}
+
+.welcome__video-play ion-icon {
   width: 80px;
   height: 80px;
   color: #fff;
@@ -537,5 +567,392 @@ a {
   width: 365px;
   height: 52px;
   line-height: 52px;
+}
+
+/* Questions */
+.questions {
+  padding: 100px 0;
+  background-image: url("../img/dialog-questions-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.questions__info-title {
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 130%;
+}
+
+.questions__info-text {
+  margin-top: 30px;
+  color: #fff;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.questions__link {
+  line-height: 183px;
+}
+
+.questions__btn {
+  padding: 16px 60px;
+}
+
+/* Footer */
+.footer {
+  padding: 60px 0 40px 0;
+  background-color: #3035C4;
+}
+
+.footer__text {
+  margin-top: 25px;
+  font-family: "Lato", sans-serif;
+  font-size: 12px;
+  color: #fff;
+  line-height: 150%;
+}
+
+.footer__lists-item {
+  margin-bottom: 25px;
+}
+
+.footer__lists-link {
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.footer__right-title {
+  margin-bottom: 12px;
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.footer__right-text {
+  margin-bottom: 25px;
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.footer__contacts-tel {
+  margin-bottom: 10px;
+  display: block;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.footer__contacts-tel img {
+  padding-right: 5px;
+}
+
+/* Hover Effects */
+.header__social-link {
+  transition: all .5s;
+}
+
+.header__social-link ion-icon:hover {
+  color: #E6514A;
+  transition: all .5s;
+}
+
+.header__menu-link {
+  transition: all .5s;
+}
+
+.header__menu-link:hover {
+  color: #3035C4;
+  transition: all .5s;
+}
+
+.dialog_btn {
+  transition: all .5s;
+}
+
+.dialog_btn:hover {
+  color: #fff;
+  background-color: #BE312B;
+  transition: all .5s;
+}
+
+.welcome__video-play {
+  transition: all .5s;
+}
+
+.welcome__video-play ion-icon:hover {
+  color: #E6514A;
+  transition: all .5s;
+}
+
+.swiper-button-next, .swiper-button-prev {
+  transition: all .5s;
+}
+
+.swiper-button-next:hover, .swiper-button-prev:hover {
+  color: #fff;
+  background-color: #3035C4;
+  transition: all .5s;
+}
+
+.swiper-button-next:hover::after {
+  background-image: url("../img/dialog-white.svg");
+  background-repeat: no-repeat;
+  transform: rotate(0deg);
+}
+
+.swiper-button-prev:hover::after {
+  background-image: url("../img/dialog-white.svg");
+  background-repeat: no-repeat;
+  transform: rotate(180deg);
+}
+
+.footer__lists-link {
+  transition: all .5s;
+}
+
+.footer__lists-link:hover {
+  color: #E6514A;
+  transition: all .5s;
+}
+
+.footer__contacts-tel:hover {
+  color: #fff;
+}
+
+.header__phones-link:hover {
+  color: #23283B;
+}
+
+/* Modal */
+.modal {
+  position: relative;
+  z-index: 2;
+}
+
+.modal__container {
+  padding: 0;
+  display: flex;
+  min-width: 770px;
+  height: 577px;
+}
+
+.modal__container-title {
+  color: #3035C4;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 130%;
+}
+
+.modal__container-text {
+  margin-top: 12px;
+  font-family: "Lato", sans-serif;
+  font-size: 12px;
+  line-height: 150%;
+}
+
+.modal__container-content {
+  padding: 52px 55px 52px 52px;
+}
+
+.modal__container-form span {
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  color: #23283B;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.modal__container-form input {
+  opacity: 0.8;
+  padding: 15px 20px;
+  border-radius: 40px;
+  border: 1px solid #23283B;
+  width: 100%;
+}
+
+.modal__container-form input::placeholder {
+  color: #23283B;
+  opacity: 0.3;
+}
+
+.modal__container-btn {
+  display: block;
+  margin-top: 35px;
+  padding: 16px 80px;
+}
+
+/* Media */
+@media (max-width: 375px) {
+  .header__social {
+    display: none;
+  }
+  .header__top {
+    display: none;
+  }
+  .header__menu {
+    display: none;
+  }
+  .header__btn {
+    display: none;
+  }
+  .main__info-text {
+    display: block;
+    font-size: 18px;
+    text-align: center;
+  }
+  .main__info-title {
+    font-size: 46px;
+    text-align: center;
+    width: 327px;
+  }
+  .main__info-btn {
+    display: block;
+    width: 327px;
+    margin: 0 auto;
+    font-size: 13px;
+  }
+  .main__info-img {
+    width: 327px;
+    margin-top: 50px;
+  }
+  .main__info-img img {
+    width: 327px;
+  }
+  .welcome__title {
+    font-size: 40px;
+  }
+  .welcome__video {
+    height: 125px;
+  }
+  .partners__img {
+    text-align: center;
+  }
+  .advantage__title {
+    font-size: 40px;
+  }
+  .courses__elements {
+    flex-wrap: wrap;
+  }
+  .teachers__title {
+    font-size: 40px;
+  }
+  .teachers__card-img {
+    width: 324px;
+  }
+  .advantage__btn {
+    width: 313px;
+  }
+  .courses__title {
+    font-size: 40px;
+  }
+  .partners__title {
+    font-size: 40px;
+  }
+  .programs__title {
+    font-size: 40px;
+  }
+  .header__bottom-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .dialog-burger {
+    display: block;
+  }
+}
+
+@media (max-width: 450px) {
+  .header__social {
+    display: none;
+  }
+  .header__top {
+    display: none;
+  }
+  .header__menu {
+    display: none;
+  }
+  .header__btn {
+    display: none;
+  }
+  .main__info-text {
+    display: block;
+    font-size: 18px;
+    text-align: center;
+  }
+  .main__info-title {
+    font-size: 46px;
+    text-align: center;
+    width: 327px;
+  }
+  .main__info-btn {
+    display: block;
+    width: 327px;
+    margin: 0 auto;
+    font-size: 13px;
+  }
+  .main__info-img {
+    width: 327px;
+    margin-top: 50px;
+  }
+  .main__info-img img {
+    width: 327px;
+  }
+  .welcome__title {
+    font-size: 40px;
+  }
+  .welcome__video {
+    height: 125px;
+  }
+  .partners__img {
+    text-align: center;
+  }
+  .advantage__title {
+    font-size: 40px;
+  }
+  .courses__elements {
+    flex-wrap: wrap;
+  }
+  .teachers__title {
+    font-size: 40px;
+  }
+  .teachers__card-img {
+    width: 324px;
+  }
+  .advantage__btn {
+    width: 313px;
+  }
+  .courses__title {
+    font-size: 40px;
+  }
+  .partners__title {
+    font-size: 40px;
+  }
+  .programs__title {
+    font-size: 40px;
+  }
+  .header__bottom-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .dialog-burger {
+    display: block;
+  }
 }
 /*# sourceMappingURL=style.css.map */

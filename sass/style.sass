@@ -5,6 +5,7 @@ $dark-color: #23283B
 $blue-color: #3035C4
 $montserrat: 'Montserrat', sans-serif
 $lato: 'Lato', sans-serif
+$red-hover: #BE312B
 =title-style
     text-align: center
     font-family: 'Montserrat', sans-serif
@@ -31,8 +32,15 @@ $lato: 'Lato', sans-serif
 /* Header */
 
 .header
+    width: 100%
+    background-color: #fff
+    position: fixed
+    z-index: 2
     box-shadow: 0px 5px 20px rgba(28, 28, 28, 0.1)
     padding: 16px 0
+    &__btn
+        &-wrapper
+            text-align: right
     &__top
         padding-bottom: 15px
         border-bottom: 1px solid $light-color
@@ -74,7 +82,17 @@ $lato: 'Lato', sans-serif
 .dialog_btn
     +dialog-btn
 
+
+.dialog-burger
+    background-image: url('../img/dialog-burger.svg')
+    width: 25px
+    height: 25px
+    background-repeat: no-repeat
 /* Modifications */
+.header__menu.show_menu
+    display: block
+.dialog-burger
+    display: none
 .section_name
     position: relative
     &::before
@@ -100,6 +118,7 @@ $lato: 'Lato', sans-serif
 
 /* Main */
 .main
+    padding-top: 100px
     &__info
         padding-top: 120px
         &-text
@@ -144,9 +163,9 @@ $lato: 'Lato', sans-serif
             left: 50%
             transform: translateX(-50%)
             ion-icon
-            width: 80px
-            height: 80px
-            color: #fff
+                width: 80px
+                height: 80px
+                color: #fff
 
 /* Programs */
 .programs
@@ -407,3 +426,291 @@ $lato: 'Lato', sans-serif
         width: 365px
         height: 52px
         line-height: 52px
+
+/* Questions */
+.questions
+    padding: 100px 0
+    background-image: url('../img/dialog-questions-bg.jpg')
+    background-repeat: no-repeat
+    background-size: cover
+    &__info
+        &-title
+            font-family: $montserrat
+            color: #fff
+            font-weight: 800
+            font-size: 48px
+            line-height: 130%
+        &-text
+            margin-top: 30px
+            color: #fff
+            font-family: $lato
+            font-size: 16px
+            line-height: 150%
+    &__link
+        line-height: 183px
+    &__btn
+        padding: 16px 60px
+
+/* Footer */
+.footer
+    padding: 60px 0 40px 0
+    background-color: $blue-color
+    &__text
+        margin-top: 25px
+        font-family: $lato
+        font-size: 12px
+        color: #fff
+        line-height: 150%
+    &__center
+
+    &__lists
+        &-item
+            margin-bottom: 25px
+        &-link
+            font-family: $montserrat
+            color: #fff
+            font-weight: bold
+            font-size: 14px
+            line-height: 17px
+    &__right
+        &-title
+            margin-bottom: 12px
+            font-family: $montserrat
+            color: #fff
+            font-weight: bold
+            font-size: 14px
+            line-height: 17px
+        &-text
+            margin-bottom: 25px
+            font-family: $montserrat
+            color: #fff
+            font-size: 14px
+            line-height: 17px
+    &__contacts
+        &-tel
+            margin-bottom: 10px
+            display: block
+            padding: 0
+            font-family: $montserrat
+            color: #fff
+            font-size: 14px
+            line-height: 17px
+            img
+                padding-right: 5px
+
+/* Hover Effects */
+.header__social-link
+    transition: all .5s 
+    ion-icon
+        &:hover
+            color: $accent-color
+            transition: all .5s
+.header__menu-link
+    transition: all .5s
+    &:hover
+        color: $blue-color
+        transition: all .5s
+.dialog_btn
+    transition: all .5s
+    &:hover
+        color: #fff
+        background-color: $red-hover
+        transition: all .5s
+.welcome__video-play
+    &:hover
+.welcome__video-play
+    transition: all .5s
+    ion-icon
+        &:hover
+            color: $accent-color
+            transition: all .5s
+.swiper-button-next,.swiper-button-prev
+    transition: all .5s
+    &:hover
+        color: #fff
+        background-color: $blue-color
+        transition: all .5s
+.swiper-button-next
+    &:hover
+        &::after
+            background-image: url('../img/dialog-white.svg')
+            background-repeat: no-repeat
+            transform: rotate(0deg)
+.swiper-button-prev
+    &:hover
+        &::after
+            background-image: url('../img/dialog-white.svg')
+            background-repeat: no-repeat
+            transform: rotate(180deg)
+.footer__lists-link
+    transition: all .5s
+    &:hover
+        color: $accent-color
+        transition: all .5s
+.footer__contacts-tel
+    &:hover
+        color: #fff
+.header__phones-link
+    &:hover
+        color: $dark-color
+
+/* Modal */
+.modal
+    position: relative
+    z-index: 2
+    &__container
+        padding: 0
+        display: flex
+        min-width: 770px
+        height: 577px
+        &-title
+            color: $blue-color
+            font-family: $montserrat
+            font-weight: 800
+            font-size: 32px
+            line-height: 130%
+        &-text
+            margin-top: 12px
+            font-family: $lato
+            font-size: 12px
+            line-height: 150%
+        &-content
+            padding: 52px 55px 52px 52px
+        &-form
+            span
+                display: block
+                margin-top: 15px
+                margin-bottom: 10px
+                color: $dark-color
+                font-family: $montserrat
+                font-weight: bold
+                font-size: 14px
+                line-height: 17px
+            input
+                opacity: 0.8
+                padding: 15px 20px
+                border-radius: 40px
+                border: 1px solid #23283B
+                width: 100%
+                &::placeholder
+                    color: #23283B
+                    opacity: 0.3
+        &-btn
+            display: block
+            margin-top: 35px
+            padding: 16px 80px
+
+
+
+/* Media */
+@media ( max-width: 375px)
+    .header__social
+        display: none
+    .header__top
+        display: none
+    .header__menu
+        display: none
+    .header__btn
+        display: none
+    .main__info-text
+        display: block
+        font-size: 18px
+        text-align: center
+    .main__info-title
+        font-size: 46px
+        text-align: center
+        width: 327px
+    .main__info-btn 
+        display: block
+        width: 327px
+        margin: 0 auto
+        font-size: 13px
+    .main__info-img
+        width: 327px
+        margin-top: 50px
+        img
+            width: 327px
+    .welcome__title
+        font-size: 40px
+    .welcome__video
+        height: 125px
+    .partners__img 
+        text-align: center
+    .advantage__title 
+        font-size: 40px
+    .courses__elements
+        flex-wrap: wrap
+    .teachers__title 
+        font-size: 40px
+    .teachers__card-img
+        width: 324px
+    .advantage__btn 
+        width: 313px
+    .courses__title 
+        font-size: 40px
+    .partners__title 
+        font-size: 40px
+    .programs__title 
+        font-size: 40px
+    .header__bottom-info
+        display: flex
+        justify-content: space-between
+        align-items: center
+    .dialog-burger
+        display: block
+
+@media ( max-width: 450px)
+    .header__social
+        display: none
+    .header__top
+        display: none
+    .header__menu
+        display: none
+    .header__btn
+        display: none
+    .main__info-text
+        display: block
+        font-size: 18px
+        text-align: center
+    .main__info-title
+        font-size: 46px
+        text-align: center
+        width: 327px
+    .main__info-btn 
+        display: block
+        width: 327px
+        margin: 0 auto
+        font-size: 13px
+    .main__info-img
+        width: 327px
+        margin-top: 50px
+        img
+            width: 327px
+    .welcome__title
+        font-size: 40px
+    .welcome__video
+        height: 125px
+    .partners__img 
+        text-align: center
+    .advantage__title 
+        font-size: 40px
+    .courses__elements
+        flex-wrap: wrap
+    .teachers__title 
+        font-size: 40px
+    .teachers__card-img
+        width: 324px
+    .advantage__btn 
+        width: 313px
+    .courses__title 
+        font-size: 40px
+    .partners__title 
+        font-size: 40px
+    .programs__title 
+        font-size: 40px
+    .header__bottom-info
+        display: flex
+        justify-content: space-between
+        align-items: center
+    .dialog-burger
+        display: block
